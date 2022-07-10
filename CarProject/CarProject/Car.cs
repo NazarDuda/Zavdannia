@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarProject
 {
-    abstract class Car
+    public abstract class Car
     {
         protected string Id;
         protected string Model;
@@ -25,6 +25,13 @@ namespace CarProject
 
         public virtual string Info() =>
             $"Id = {Id}, Model = {Model}, MaxSpeed = {MaxSpeed}, Strength = {Strength}, Race = {Race}";
+
+        public abstract CarType GetType();
+
+        public string GetId()
+        {
+            return Id;
+        }
 
     }
 }

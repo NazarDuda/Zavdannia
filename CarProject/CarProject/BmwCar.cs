@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace CarProject
 {
-    class BmwCar : Car
+    public class BmwCar : Car
     {
         public BmwCar(string id, string model, int maxSpeed, int strength, int race) : base(id, model, maxSpeed, strength, race){}
 
         public override string Info() =>
             "Bmw car: " + base.Info();
+
+        public override CarType GetType() =>
+            CarType.Bmw;
     }
 }
