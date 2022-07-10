@@ -6,7 +6,8 @@ namespace CarProject
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Car newCar = new ("AT 1234 IP", "Audi Q7", 350, 500000, 20000);
+            newCar.Info();
         }
     }
 }
