@@ -10,9 +10,7 @@ namespace CarProject
     {
         public BmwCar(string id, string model, int maxSpeed, int strength, int race) : base(id, model, maxSpeed, strength, race){}
 
-        public override string Info()
-        {
-            return "Bmw car: " + base.Info();
-        }
+        public override string Info() =>
+            "Bmw car: " + base.Info();
     }
 }

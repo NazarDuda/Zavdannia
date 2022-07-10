@@ -24,7 +24,7 @@ namespace CarProject
         }
 
         public virtual string Info() =>
-            $"Id = {Id}, Model = {Model}, MaxSpeed = {MaxSpeed}, Strength = {Strength}, Race = {Race} ";
+            $"Id = {Id}, Model = {Model}, MaxSpeed = {MaxSpeed}, Strength = {Strength}, Race = {Race}";
 
     }
 }
