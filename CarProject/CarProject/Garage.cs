@@ -28,7 +28,7 @@ namespace CarProject
             CountOfCars.Add(CarType.Mercedes, 0);
         }
         
-        public  void AddCar(Car car)
+        public  void AddCarToGarage(Car car)
         {
             ListOfCars.Add(car);
 
@@ -49,7 +49,7 @@ namespace CarProject
             }   
         }
 
-        public  void RemoveById(string IdOfCar)
+        public  void RemoveByIdFromGarage(string IdOfCar)
         {
             var car = ListOfCars.Where(x => x.GetId() == IdOfCar).First();
             ListOfCars.Remove(car); 
@@ -73,11 +73,14 @@ namespace CarProject
 
         public  void CountOfCarsByType(CarType type)
         {
-                Console.WriteLine($"Count of BmwCars = {CountOfCars[type]}");
+            Console.WriteLine();
+            Console.WriteLine($"Count of {type}Cars = {CountOfCars[type]}");
         }
 
-        public  void ShowAllCars()
+        public  void ShowAllCarsInGarage()
         {
+            Console.WriteLine();
+            Console.WriteLine("In garage are: ");
             foreach (var car in ListOfCars)
             {
                 Console.WriteLine(car.Info());

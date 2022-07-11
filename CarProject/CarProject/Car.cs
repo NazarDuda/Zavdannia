@@ -28,10 +28,8 @@ namespace CarProject
 
         public abstract CarType GetType();
 
-        public string GetId()
-        {
-            return Id;
-        }
+        public string GetId() =>
+             Id;
 
     }
 }
